@@ -6,7 +6,8 @@ $('document').ready(function(){
 		var vw;
 		$(window).resize(function(){
 			 vw = $(window).width()/2;
-			$('#b1,#b2,#b3,#b4,#b5,#b6,#b7,#b8,#b9').stop();
+			$('#b1,#b2,#b3,#b4').stop();
+			$ ('#b5,#b6,#b7,#b8,#b9').stop();
 			$('#b11').animate({top:240, left: vw-400},500);
 			$('#b22').animate({top:240, left: vw-300},500);
 			$('#b33').animate({top:240, left: vw-200},500);
@@ -109,7 +110,8 @@ $('document').ready(function(){
 		$('#b7').animate({left:randleft,bottom:randtop},10000,function(){
 			loopEight();
 		});
-	}function loopNine() {
+	}
+	function loopNine() {
 		var randleft = 1000*Math.random();
 		var randtop = 500*Math.random();
 		$('#b7').animate({left:randleft,bottom:randtop},10000,function(){
@@ -119,8 +121,9 @@ $('document').ready(function(){
 
 	$('#balloons_flying').click(function(){
 		$('.balloon-border').animate({top:-500},8000);
-		$('#b1,#b4,#b5,#b7,#b9').addClass('balloons-rotate-behaviour-one');
-		$('#b2,#b3,#b6,#b8').addClass('balloons-rotate-behaviour-two');
+		$('#b1,#b4,#b5,#b7').addClass('balloons-rotate-behaviour-one');
+		$('#b8,#b9').addClass('balloons-rotate-behaviour-one');
+		$('#b2,#b3,#b6').addClass('balloons-rotate-behaviour-two');
 		loopOne();
 		loopTwo();
 		loopThree();
@@ -154,7 +157,8 @@ $('document').ready(function(){
 	$('#wish_message').click(function(){
 		 vw = $(window).width()/2;
 
-		$('#b1,#b2,#b3,#b4,#b5,#b6,#b7,#b8,#b9').stop();
+		$('#b1,#b2,#b3,#b4').stop();
+		$('#b5,#b6,#b7,#b8,#b9').stop();
 		$('#b1').attr('id','b11');
 		$('#b2').attr('id','b22')
 		$('#b3').attr('id','b33')
