@@ -174,6 +174,7 @@ $('document').ready(function(){
 		$('#b88').animate({top:240, left: vw+300},500);
 		$('#b99').animate({top:240, left: vw+400},500);
 		$('.balloons').css('opacity','0.9');
+		$('.balloons h2').fadeIn(3000);
 		$(this).fadeOut('slow').delay(3000).promise().done(function(){
 			$('#story').fadeIn('slow');
 		});
