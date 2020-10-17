@@ -128,6 +128,8 @@ $('document').ready(function(){
 		loopFive();
 		loopSix();
 		loopSeven();
+		loopEight();
+		loopNine();
 		
 		$(this).fadeOut('slow').delay(5000).promise().done(function(){
 			$('#cake_fadein').fadeIn('slow');
