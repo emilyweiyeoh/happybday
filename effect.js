@@ -107,14 +107,14 @@ $('document').ready(function(){
 	function loopEight() {
 		var randleft = 1000*Math.random();
 		var randtop = 500*Math.random();
-		$('#b7').animate({left:randleft,bottom:randtop},10000,function(){
+		$('#b8').animate({left:randleft,bottom:randtop},10000,function(){
 			loopEight();
 		});
 	}
 	function loopNine() {
 		var randleft = 1000*Math.random();
 		var randtop = 500*Math.random();
-		$('#b7').animate({left:randleft,bottom:randtop},10000,function(){
+		$('#b9').animate({left:randleft,bottom:randtop},10000,function(){
 			loopNine();
 		});
 	}
